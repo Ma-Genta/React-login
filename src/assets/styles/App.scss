@@ -1,5 +1,41 @@
-body{
+@import './Vars.scss';
+@import './media.scss';
+
+body {
   margin: 0;
-  background-color: red;
+  font-family: $theme-font;
+  background: linear-gradient(#fa1616, #12cad6) no-repeat;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.input {
+  background-color: rgba(255,255,255,0.1);
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  font-size: 16px;
+  height: 50px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 0px 20px;
+  width: 70%;
+}
+
+::placeholder {
   color: white;
 }
+
+.categories__title {
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  margin-top: -16px;
+  position: absolute;
+  padding-left: 30px;
+  width: 100%;
+}
+
